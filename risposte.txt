@@ -1,0 +1,10 @@
+A cosa serve Express generator? Express generator serve a creare tutti quei file di base che di solito creiamo manulamente, serve anche a separare la programmazione in mdodo da semplificarla
+Come si genera un progetto che abbia pug come motore di template e sia inizializzato con il file .gitignore? NPM i
+Cosa contengono le seguenti cartelle?
+Views: Temlate pug
+Route: Le route e i rispettivi file
+Public: File statici
+Cosa contiene il file app.js? l'import delle librerie e le route dei vari percorsi
+Perché (secondo te) non è opportuno  scrivere tutti i percorsi all’interno dello stesso file app.js come abbiamo fatto fin ora? perché scrivendo tutto in 1 solo file diventa difficile gestire tutto al meglio, invece divindendo il progetto su + file la gestione diventa + facile
+Come si definisce la corrispondenza tra una route e una azione sfruttando l’oggetto router di express? app.use
+Come si stabilisce la corrispondenza tra un URL e una route nel file app.js? app.use/nomefile_js/route, nel file js invece solo /route

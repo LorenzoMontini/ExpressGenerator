@@ -1,0 +1,18 @@
+<script src = "faker.js" type = "text/javascript"></script>
+<script>
+  var randomName = faker.name.findName(); // Caitlyn Kerluke
+  var randomEmail = faker.internet.email(); // Rusty@arne.info
+  var randomCard = faker.helpers.createCard(); // random contact card containing many properties
+</script>
+
+var faker = require('faker');
+
+var randomName = faker.name.findName(); // Rowan Nikolaus
+var randomEmail = faker.internet.email(); // Kassandra.Haley@erich.biz
+var randomCard = faker.helpers.createCard(); // random contact card containing many properties
+
+console.log(faker.fake("{{name.lastName}}, {{name.firstName}} {{name.suffix}}"));
+
+nome ck, mail ck, nazionalità: address.country() ck, sito: internet.url() ck, immagine: image.avatar() ck/2
+
+a(href=`instruction?id=${m.id}`)*/

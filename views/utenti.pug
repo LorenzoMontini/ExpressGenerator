@@ -1,0 +1,15 @@
+extends layout
+
+doctype html
+html
+ head
+   title #{title}
+   meta(name="viewport" content="width=device-width, initial-scale=1")
+ body
+   header.header
+         h1 #{title}
+   article.container
+     each person in p
+       div.person
+        h2 #{person.name}
+        h2 #{person.text} 

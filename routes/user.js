@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var faker = require('faker');
 const fs = require('fs');
-//const people = require('../people.json')
+const people = require('../people.json')
 
 /* GET users listing. */
 router.get('/new', function(req, res, next) {
@@ -40,14 +40,9 @@ function createFakePerson()
  vett.push(person)
 }
 
-let formatted_object = {"vettore":"[]"}; //vorrei creare il solito vettore di oggetti, tipo: ppl[{name:nomea},{name:nomeb}]
-formatted_object.vettore.push(vett);
- 
  let data = JSON.stringify(vett);
- fs.writeFileSync('peoples.json', formatted_object);
+ fs.writeFileSync('people.json', data);
  return vett;
 }
-
-
 
 module.exports = router;

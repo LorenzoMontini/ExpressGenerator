@@ -1,0 +1,16 @@
+extends layout
+block content
+ html
+  head
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    title #{title}
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+  body
+    header.header
+        a(href=`/user/info/person?name=${title}`)
+          h1 #{title}
+    article.container
+      img(src=('/${pt.image}') top center no-repeat;) 
+      each t in pt.text
+        div.person
+          h2 #{t}

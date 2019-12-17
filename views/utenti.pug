@@ -10,8 +10,7 @@ block content
           h1 #{title}
     each person in p
       div.person
-        div.person-image(style=`background: url('/${person.image}') top center no-repeat; background-size: cover;`)
-         h1.name
-         | nome: #{person.name}
-         a(href=`/person?name=${person.name}`)
-         | View Profile
+        div.person-image
+         img(src=('/${person.image}') top center no-repeat;) 
+        a(href=`/user/poeti/person?name=${person.name}`)
+         h2 #{person.name}

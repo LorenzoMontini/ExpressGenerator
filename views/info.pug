@@ -1,0 +1,16 @@
+extends layout
+block content
+ html
+  head
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    title #{title}
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+  body
+    header.header
+          h1 #{title}
+    article.container
+      img(src=('../${ipt.image}') style:"width:100%;height:100%")
+      h2.mail #{ipt.email}
+      h2.site #{ipt.website}
+      h2.country #{ipt.country}
+      
